@@ -22,3 +22,5 @@ regions:
 libraries-extend:
   bootstrap/framework:
     - bootstrap_kateri/framework
+
+logo: logo.png

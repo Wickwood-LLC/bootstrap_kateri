@@ -204,10 +204,6 @@ p {
   }
 }
 
-.text-formatted p {
-  font-family: "Lucida Grande", Lucida, Verdana, sans-serif;
-}
-
 del {
   text-decoration: line-through;
 }
@@ -448,4 +444,15 @@ ul.menu > li > a {
 footer.footer {
   background: #a879f5;
   color: rgba(255, 255, 255, 0.65);
+}
+
+#block-footermessage {
+  font-family: "Lucida Grande", Lucida, Verdana, sans-serif;
+}
+#block-footermessage a {
+  color: rgba(255, 255, 255, 0.8);
+}
+#block-footermessage a:hover {
+  color: rgba(255, 255, 255, 0.95);
+  text-decoration: none;
 }/*# sourceMappingURL=style.css.map */

@@ -5,23 +5,42 @@
     background-color: #7850b8;
     background-image: linear-gradient(to bottom, #a879f5 0%, #7850b8 100%);
 
+    .logo {
+        grid-area: logo;
+        align-self: center;
+    }
+
     a.navbar-brand {
         color: white;
         line-height: 1;
+        height: auto;
+        padding: 0;
+        margin: 0;
         font-variant: small-caps;
         font-style: italic;
         font-weight: bold;
+        grid-area: site-name;
         // fluid-type values: ($min_width, $max_width, $min_font, $max_font)
         @include fluid-type(740px, 1200px, 24px, 38px);
     }
 
     p.navbar-text {
         color: white;
-        margin-top: 7px;
+        margin: 0;
         word-spacing: 0.1em;
         font-family: 'Georgia', 'Times New Roman', 'Times', 'serif';
         font-style: italic;
+        grid-area: site-slogan;
         // fluid-type values: ($min_width, $max_width, $min_font, $max_font)
         @include fluid-type(740px, 1200px, 14px, 24px);
     }
+}
+
+.region.region-navigation {
+    display: grid;
+    padding: 1em 0;
+    gap: 0.5rem;
+    grid-template:
+        "logo   site-name"
+        "logo   site-slogan";
 }

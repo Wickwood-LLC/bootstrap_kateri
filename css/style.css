@@ -4,12 +4,20 @@
   background-color: #7850b8;
   background-image: linear-gradient(to bottom, #a879f5 0%, #7850b8 100%);
 }
+#navbar .logo {
+  grid-area: logo;
+  align-self: center;
+}
 #navbar a.navbar-brand {
   color: white;
   line-height: 1;
+  height: auto;
+  padding: 0;
+  margin: 0;
   font-variant: small-caps;
   font-style: italic;
   font-weight: bold;
+  grid-area: site-name;
 }
 #navbar a.navbar-brand {
   font-size: 24px;
@@ -26,10 +34,11 @@
 }
 #navbar p.navbar-text {
   color: white;
-  margin-top: 7px;
+  margin: 0;
   word-spacing: 0.1em;
   font-family: "Georgia", "Times New Roman", "Times", "serif";
   font-style: italic;
+  grid-area: site-slogan;
 }
 #navbar p.navbar-text {
   font-size: 14px;
@@ -43,4 +52,11 @@
   #navbar p.navbar-text {
     font-size: 24px;
   }
+}
+
+.region.region-navigation {
+  display: grid;
+  padding: 1em 0;
+  gap: 0.5rem;
+  grid-template: "logo   site-name" "logo   site-slogan";
 }/*# sourceMappingURL=style.css.map */

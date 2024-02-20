@@ -1,4 +1,46 @@
-/**
- * If using a CSS pre-processor, tell it to overwrite this file. If not, place
- * your custom CSS modifications here.
- */
+/* Fluid Typography */
+#navbar {
+  border: unset;
+  background-color: #7850b8;
+  background-image: linear-gradient(to bottom, #a879f5 0%, #7850b8 100%);
+}
+#navbar a.navbar-brand {
+  color: white;
+  line-height: 1;
+  font-variant: small-caps;
+  font-style: italic;
+  font-weight: bold;
+}
+#navbar a.navbar-brand {
+  font-size: 24px;
+}
+@media screen and (min-width: 740px) {
+  #navbar a.navbar-brand {
+    font-size: calc(24px + 14 * (100vw - 740px) / 460);
+  }
+}
+@media screen and (min-width: 1200px) {
+  #navbar a.navbar-brand {
+    font-size: 38px;
+  }
+}
+#navbar p.navbar-text {
+  color: white;
+  margin-top: 7px;
+  word-spacing: 0.1em;
+  font-family: "Georgia", "Times New Roman", "Times", "serif";
+  font-style: italic;
+}
+#navbar p.navbar-text {
+  font-size: 14px;
+}
+@media screen and (min-width: 740px) {
+  #navbar p.navbar-text {
+    font-size: calc(14px + 10 * (100vw - 740px) / 460);
+  }
+}
+@media screen and (min-width: 1200px) {
+  #navbar p.navbar-text {
+    font-size: 24px;
+  }
+}/*# sourceMappingURL=style.css.map */

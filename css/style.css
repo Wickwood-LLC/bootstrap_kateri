@@ -5,6 +5,7 @@ html {
 }
 
 body {
+  color: #3b3b3b;
   min-height: 100%;
   word-wrap: break-word;
   font-family: "Georgia", "Times New Roman", "Times", "serif";
@@ -203,6 +204,10 @@ p {
   }
 }
 
+.text-formatted p {
+  font-family: "Lucida Grande", Lucida, Verdana, sans-serif;
+}
+
 del {
   text-decoration: line-through;
 }
@@ -329,11 +334,12 @@ dd {
   align-self: center;
 }
 #navbar a.navbar-brand {
-  color: white;
+  color: #fffeff;
   line-height: 1;
   height: auto;
   padding: 0;
   margin: 0;
+  font-family: "Lucida Grande", Lucida, Verdana, sans-serif;
   font-variant: small-caps;
   font-style: italic;
   font-weight: bold;
@@ -353,7 +359,7 @@ dd {
   }
 }
 #navbar p.navbar-text {
-  color: white;
+  color: #fffeff;
   margin: 0;
   word-spacing: 0.1em;
   font-family: "Georgia", "Times New Roman", "Times", "serif";
@@ -379,4 +385,31 @@ dd {
   padding: 1em 0;
   gap: 0.5rem;
   grid-template: "logo   site-name" "logo   site-slogan";
+}
+
+a,
+.link {
+  color: #7850b8;
+}
+
+a:hover,
+a:focus,
+.link:hover,
+.link:focus {
+  color: #803dea;
+}
+
+a:active,
+.link:active {
+  color: #9c64f5;
+}
+
+.sidebar .block {
+  border-color: #f9f9f9;
+  background-color: #f6f6f2;
+}
+
+footer.footer {
+  background: #a879f5;
+  color: rgba(255, 255, 255, 0.65);
 }/*# sourceMappingURL=style.css.map */

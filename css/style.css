@@ -473,6 +473,15 @@ ul.menu > li > a {
   padding: 0;
 }
 
+.block-social-sharing-block {
+  top: 150px;
+}
+@media (min-width: 980px) {
+  .block-social-sharing-block {
+    top: 230px;
+  }
+}
+
 footer.footer {
   background: #a879f5;
   color: rgba(255, 255, 255, 0.65);

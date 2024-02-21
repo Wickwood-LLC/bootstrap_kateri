@@ -1,4 +1,5 @@
 @import "mixins";
+@import "../bower_components/breakpoint-sass/stylesheets/breakpoint";
 
 html {
     height: 100%;
@@ -365,6 +366,14 @@ ul.menu {
 
     >li>a {
         padding: 0;
+    }
+}
+
+.block-social-sharing-block {
+    top: 150px;
+
+    @include breakpoint(980px) {
+        top: 230px;
     }
 }
 

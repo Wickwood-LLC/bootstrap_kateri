@@ -62,7 +62,7 @@ h2,
     font-size: 1.143em;
     font-weight: bold;
     // fluid-type values: ($min_width, $max_width, $min_font, $max_font)
-    @include fluid-type(320px, 980px, 18px, 24px);
+    @include fluid-type(320px, 980px, 24px, 30px);
 
     a {
         border-bottom: none;
@@ -76,7 +76,7 @@ h3,
     font-size: 1.092em;
     font-weight: bold;
     // fluid-type values: ($min_width, $max_width, $min_font, $max_font)
-    @include fluid-type(320px, 980px, 16px, 18px);
+    @include fluid-type(320px, 980px, 20px, 24px);
 }
 
 h4,
@@ -382,7 +382,7 @@ footer.footer {
     color: rgba(255, 255, 255, 0.65);
 }
 
-#block-footermessage {
+#block-bootstrap-kateri-footermessage {
     font-family: "Lucida Grande", Lucida, Verdana, sans-serif;
 
     a {

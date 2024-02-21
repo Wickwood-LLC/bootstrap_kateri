@@ -1,7 +1,20 @@
 @charset "UTF-8";
-/* Fluid Typography */
 html {
   height: 100%;
+}
+
+:root {
+  font-size: 12px;
+}
+@media screen and (min-width: 320px) {
+  :root {
+    font-size: calc(12px + 4 * (100vw - 320px) / 880);
+  }
+}
+@media screen and (min-width: 1200px) {
+  :root {
+    font-size: 16px;
+  }
 }
 
 body {
@@ -10,6 +23,7 @@ body {
   word-wrap: break-word;
   font-family: "Georgia", "Times New Roman", "Times", "serif";
   line-height: 1.5;
+  font-size: 87.5%;
 }
 
 a {
@@ -232,6 +246,24 @@ blockquote:after {
 }
 blockquote > p:first-child {
   display: inline;
+}
+
+.node-title {
+  font-weight: bold;
+  text-align: center;
+}
+.node-title {
+  font-size: 24px;
+}
+@media screen and (min-width: 320px) {
+  .node-title {
+    font-size: calc(24px + 6 * (100vw - 320px) / 660);
+  }
+}
+@media screen and (min-width: 980px) {
+  .node-title {
+    font-size: 30px;
+  }
 }
 
 [dir=rtl] blockquote {

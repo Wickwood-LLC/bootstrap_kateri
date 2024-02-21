@@ -1,4 +1,3 @@
-/* Fluid Typography */
 @function strip-unit($value) {
   @return $value / ($value * 0 + 1);
 }

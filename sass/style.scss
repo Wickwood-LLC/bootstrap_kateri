@@ -154,7 +154,7 @@ blockquote {
 .node-title {
     font-weight: bold;
     text-align: center;
-    @include fluid-type(320px, 980px, 24px, 30px);
+    @include fluid-type(320px, 980px, 30px, 36px);
 }
 
 [dir="rtl"] {
